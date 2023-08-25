@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  background-color: blanchedalmond;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 0;
+  margin-inline: 0;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --text: #000000;
+  --background: #ffebcd;
+  --primary: #69b093;
+  --secondary: #dccfbc;
+  --accent: #6c4686;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  position: sticky;
+}
+
+nav img {
+  width: 6rem;
+}
+.button-play {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+}
+.modal-closed {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  overflow-y: hidden;
+  transition: all 500ms;
+}
+.first {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+  gap: 0.1rem;
+  padding-left: 2rem;
+}
+h1 {
+  font-size: calc(1rem * 2);
+  margin: 0;
+  text-transform: capitalize;
+}
+p {
+  font-size: calc(1rem * 1.5);
+  font-weight: 400;
+}
+
+.modal-button {
+  padding: 0.5rem 3rem;
+  border: none;
+  color: black;
+  background-color: var(--primary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.modal-button:hover {
+  filter: drop-shadow(0 0 10px var(--primary));
+  letter-spacing: 0.25rem;
+}
+
+.second {
+  width: 80%;
+  height: 50%;
+  background-color: var(--secondary);
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 3rem;
+  gap: 1rem;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: calc(1rem * 2);
+  margin: 0;
+  text-transform: capitalize;
+}
+p {
+  text-transform: capitalize;
+}
+
+.number-ul {
+  font-size: calc(1rem * 2);
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.header {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.buttons-js-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.results-display-js {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+.img-result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.membership-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.plans-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 90%;
+}
+
+.free-unlimited,
+.pro-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 80%;
+  background-color: var(--secondary);
+  padding-block: 3rem;
+}
+.free-unlimited {
+  background: rgba(220, 207, 188, 0.33);
+}
+.pro-plan {
+  background: rgba(105, 176, 147, 0.47);
+}
+h3 {
+  text-transform: capitalize;
+  font-size: calc(1rem * 1.7);
+}
+
+.button {
+  margin-top: auto;
+  background-color: var(--secondary);
+  padding: 0.9rem calc(5 * 1rem);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.pro-plan > .button {
+  background-color: var(--primary);
+  transition: all 500ms;
+}
+
+.pro-plan > .button:hover {
+  filter: drop-shadow(0 0 10px var(--primary));
+}
+
+.image-mickey {
+  position: absolute;
+  top: 3%;
+  right: -1%;
+  width: 1rem * 5;
+  height: auto;
+  z-index: -1;
+}
+
+.copyright-js {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent);
+  text-transform: capitalize;
+}
